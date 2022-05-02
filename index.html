@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,600;1,500&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link ico -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
     <!-- link css -->
     <link rel="stylesheet" href="style.css" />
 
@@ -16,10 +28,13 @@
     <title>Visual Comp</title>
   </head>
   <body>
+    <!-- header -->
+    <h1>VISUAL COMP</h1>
+
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Visual Comp</a>
+        <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -84,63 +99,142 @@
     </nav>
 
     <!-- carusel -->
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="..." class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
+    <div class="container">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/insumos/cartucho-hp.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/productos.img/teclado-gamer.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/productos.img/auriculares-gamer.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+
+    <!-- grid -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-sm-6">
+          <img
+            src="./img/periferico-1.jpg"
+            class="img-fluid"
+            alt="periferico"
+          />
+        </div>
+        <div class="col-xl-6 col-sm-6">
+          <img
+            src="./img/servicio-tecnico-pc.jpg"
+            class="img-fluid"
+            alt="servico tecnico"
+          />
+        </div>
+
+        <div class="ratio ratio-16x9" class="col-xl-6 col-sm-6">
+          <iframe
+            width="660"
+            height="415"
+            src="https://www.youtube.com/embed/1tR5dJdURKA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <ul class="ico-ul">
+              <li class="ico-ul-li">
+                <a href="https://es-la.facebook.com/" target="blank"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <li class="ico-ul-li">
+                <a href="https://www.instagram.com/?hl=es" target="blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li class="ico-ul-li">
+                <a href="https://twitter.com/?lang=es" target="blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li class="ico-ul-li">
+                <a href="https://www.youtube.com/" target="blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col info">
+            <p>+54 9 11 12345678</p>
+            <p>Alsina 700 - Burzaco - BS.AS.</p>
+            <p>visualcomp@visualcomp.com</p>
+          </div>
+
+          <div class="col info-hora">
+            <p>Horario de Atencion</p>
+            <p>Lunes a viernes: 10.30 a 13.00</p>
+            <p>Sabado: 10.30 a 13.00</p>
+            <p>Domingo: Cerrado</p>
+          </div>
+
+          <div class="col pay">
+            <p>Medio de Pago</p>
+            <img
+              src="./img/binance-pay.ico"
+              alt="binance pay"
+              class="pay-img"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- link script bootstrap js -->
     <script
